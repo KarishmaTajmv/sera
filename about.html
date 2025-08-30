@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - SERA GULF</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <style>
+    /* Page-specific polish for the About hero & timeline */
+    .about-hero{
+      position:relative; text-align:center; color:#fff; border-radius:16px; overflow:hidden;
+      min-height:52vh; display:grid; place-items:center; padding:46px 22px;
+      background:
+        radial-gradient(60% 60% at 50% 50%, rgba(13,78,123,.55) 0%, rgba(0,0,0,.55) 100%),
+        url('assets/hero1.png') center/cover no-repeat;
+    }
+    .about-hero h1{font-size:clamp(2rem,4vw,3rem); margin:0 0 8px}
+    .about-hero p{max-width:900px; margin:0 auto 14px; font-size:clamp(1rem,2vw,1.2rem); opacity:.95}
+    .pill{
+      display:inline-block; padding:8px 12px; margin:6px; border-radius:999px; background:rgba(255,255,255,.14); color:#fff; font-weight:600; font-size:.9rem
+    }
+    .two-col{display:grid; gap:26px; grid-template-columns: 1.1fr .9fr}
+    @media (max-width:900px){ .two-col{grid-template-columns:1fr} }
+
+    .timeline{position:relative; margin:0; padding:0; list-style:none}
+    .timeline li{display:grid; grid-template-columns:30px 1fr; gap:14px; margin:14px 0; align-items:start}
+    .timeline .dot{width:12px; height:12px; border-radius:50%; background:#0d4e7b; margin-top:7px}
+    .timeline .card{margin:0}
+    .partner-bar{display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+    .note{color:#666; font-size:.95rem}
+  </style>
+</head>
+
+<!-- IMPORTANT: body class picks the grey-pattern tile background from CSS -->
+<body class="about">
+  <header>
+    <img src="assets/logo.jpg" class="logo" alt="SERA GULF logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <div>
+      <h1>Creating Beautiful, Durable Spaces</h1>
+      <p>At SERA GULF, we curate ceramic & porcelain tiles, sanitary ware, and accessories that marry minimalist aesthetics with commercial-grade performance.</p>
+      <div>
+        <span class="pill">Tiles & Surfaces</span>
+        <span class="pill">Sanitary Ware</span>
+        <span class="pill">Accessories & Fittings</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND STORY + GALLERY -->
+  <section class="section">
+    <div class="two-col">
+      <div>
+        <h2>Who we are</h2>
+        <p class="lead">We combine design sensibility with technical know-how—sourcing from trusted manufacturing partners and supporting projects end-to-end, from selections and mockups to delivery.</p>
+
+        <div class="grid" style="margin-top:14px">
+          <div class="card">
+            <img src="assets/tiles picture.png" alt="Stone & marble effects" />
+            <div class="pad">
+              <h3>Stone & Marble Effects</h3>
+              <p>Large formats, lifelike veining, and high wear resistance.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/pic 2.png" alt="Sanitary ware" />
+            <div class="pad">
+              <h3>Sanitary Ware</h3>
+              <p>Water-saving basins, WCs, bidets, and concealed solutions.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <h2>Our Journey</h2>
+        <p class="lead">Founded in 2020 and based in Sharjah Media City, we serve architects, interior designers, developers, and homeowners across the UAE.</p>
+        <p>Our team brings decades of combined experience in product sourcing, specification, and project logistics. We understand the balance between aesthetics, performance, and budget—helping you find the right solutions for your space.</p>
+        <p>We look forward to collaborating on your next project.</p>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO / PROCESS -->
+  <section class="section">
+    <h2 style="text-align:center">What we do</h2>
+    <p class="lead" style="text-align:center">From product curation to project handover—built around schedule, quality, and cost.</p>
+    <ul class="timeline">
+      <li>
+        <span class="dot" aria-hidden="true"></span>
+        <div class="card">
+          <div class="pad">
+            <h3>Consult & Curate</h3>
+            <p>Understand your space, budget, and performance needs; shortlist surfaces and fixtures that match the brief.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <span class="dot" aria-hidden="true"></span>
+        <div class="card">
+          <div class="pad">
+            <h3>Samples & Mockups</h3>
+            <p>Provide samples, laying patterns, and finish boards for design approvals.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <span class="dot" aria-hidden="true"></span>
+        <div class="card">
+          <div class="pad">
+            <h3>Supply & Logistics</h3>
+            <p>Coordinate manufacturing slots and shipping, ensuring timelines are met for site execution.</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <span class="dot" aria-hidden="true"></span>
+        <div class="card">
+          <div class="pad">
+            <h3>After-Sales Support</h3>
+            <p>Technical sheets, installation guidance, and maintenance recommendations.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <h2 style="text-align:center">Why SERA GULF</h2>
+    <div class="grid">
+      <div class="card"><div class="pad"><h3>Design + Engineering</h3><p>Minimalist aesthetics balanced with slip resistance, water absorption, and durability targets.</p></div></div>
+      <div class="card"><div class="pad"><h3>Reliable Sourcing</h3><p>Trusted partner network across regions ensures quality and availability.</p></div></div>
+      <div class="card"><div class="pad"><h3>Project Readiness</h3><p>Commercial-grade surfaces and fixtures suitable for hospitality, residential, and public builds.</p></div></div>
+      <div class="card"><div class="pad"><h3>Sustainability</h3><p>Water-efficient sanitary ware and low-VOC material options.</p></div></div>
+    </div>
+  </section>
+
+  <!-- PARTNERS / CATEGORIES QUICK LOOK -->
+  <section class="section">
+    <h2 style="text-align:center">Categories at a Glance</h2>
+    <div class="partner-bar">
+      <div class="card"><div class="pad"><strong>Tiles</strong><br/>Marble • Stone • Wood • Concrete • Decor • 3D</div></div>
+      <div class="card"><div class="pad"><strong>Sanitary Ware</strong><br/>Basins • WCs • Bidets • Shower Systems</div></div>
+      <div class="card"><div class="pad"><strong>Accessories</strong><br/>Mixers • Vanities • Mirrors • Trays</div></div>
+      <div class="card"><div class="pad"><strong>Applications</strong><br/>Bathroom • Kitchen • Living • Outdoor • Commercial</div></div>
+    </div>
+    <p class="note" style="margin-top:10px; text-align:center">Full catalogs and technical sheets available on request.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 SERA GULF LLC</p>
+  </footer>
+</body>
+</html>

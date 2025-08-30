@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SERA GULF - Tiles & Sanitary Ware</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <style>
+    /* Page-only polish */
+    .hero{
+      position:relative; margin:20px; border-radius:16px; overflow:hidden;
+      min-height:58vh; display:grid; place-items:center; text-align:center; color:#fff;
+      padding:48px 22px; box-shadow:0 12px 36px rgba(0,0,0,.28);
+    }
+    .hero h1{font-size:clamp(2rem,4vw,3.2rem); margin:0 0 8px}
+    .hero p{max-width:900px; margin:0 auto 14px; font-size:clamp(1rem,2vw,1.2rem); opacity:.96}
+    .chip-group{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:10px}
+    .chip{padding:8px 12px; border-radius:999px; background:rgba(255,255,255,.14); color:#fff; font-weight:600; font-size:.9rem}
+    .section h2{margin-top:0}
+    .brands{display:flex; flex-wrap:wrap; gap:18px; justify-content:center; opacity:.85}
+    .brands .tag{background:#eef4ff; color:#0d4e7b; border:1px solid rgba(13,78,123,.15); padding:8px 12px; border-radius:999px; font-weight:600}
+    .cta{display:grid; place-items:center; text-align:center; padding:40px; border-radius:16px}
+  </style>
+</head>
+<body class="home">
+  <header>
+    <img src="assets/logo.jpg" alt="Sera Gulf Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Rotating hero uses assets/hero1.png, hero2.jpg, hero3.jpg via main.js -->
+  <section class="hero">
+    <div>
+      <h1>Premium Tiles & Sanitary Ware</h1>
+      <p>Elegant surfaces and water-saving fixtures for modern homes and commercial spaces.</p>
+      <a href="products.html" class="btn">Explore Collections</a>
+      <div class="chip-group">
+        <span class="chip">Marble & Stone</span>
+        <span class="chip">3D Relief</span>
+        <span class="chip">Patterned Decor</span>
+        <span class="chip">Basins & WCs</span>
+        <span class="chip">Accessories</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 style="text-align:center;">Signature Looks</h2>
+    <p class="lead" style="text-align:center;">A glimpse of what we supply — swap these with your best shots in <code>/assets/</code>.</p>
+    <div class="grid">
+      <article class="card">
+        <img src="assets/hero1.png" alt="Luxury Bathroom Inspiration" />
+        <div class="pad">
+          <h3>Luxury Bath</h3>
+          <p>Large-format marble effects and gold details.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/hero2.jpg" alt="Patterned Tiles" />
+        <div class="pad">
+          <h3>Patterned Classics</h3>
+          <p>Mediterranean patterns for bold feature walls and floors.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/hero3.jpg" alt="Minimal 3D Tiles" />
+        <div class="pad">
+          <h3>3D Geometrics</h3>
+          <p>Subtle reliefs and clean whites for minimal interiors.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:18px">
+    <h2 style="text-align:center;">Explore by Category</h2>
+    <div class="grid">
+      <a class="card" href="products.html#tiles"><img src="assets/tiles picture.png" alt="Tiles"/><div class="pad"><h3>Tiles</h3><p>Marble • Stone • Wood • Decor • 3D</p></div></a>
+      <a class="card" href="products.html#sanitary"><img src="assets/pic 2.png" alt="Sanitary Ware"/><div class="pad"><h3>Sanitary Ware</h3><p>Basins • WCs • Bidets • Concealed</p></div></a>
+      <a class="card" href="products.html#accessories"><img src="assets/Pic 3.png" alt="Accessories"/><div class="pad"><h3>Accessories</h3><p>Mixers • Vanities • Shower Systems</p></div></a>
+    </div>
+  </section>
+
+  <section class="section cta" style="background:rgba(255,255,255,.9)">
+    <h2>Design Support for Your Project</h2>
+    <p class="lead" style="max-width:780px">We help with selections, samples, laying patterns, and scheduling — so you get the right finish at the right time.</p>
+    <div class="brands">
+      <span class="tag">Commercial-Grade</span>
+      <span class="tag">Eco-Friendly</span>
+      <span class="tag">Quick Samples</span>
+      <span class="tag">Logistics Support</span>
+    </div>
+    <p style="margin-top:16px"><a class="btn" href="contact.html">Get a Quote</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 SERA GULF LLC | Sharjah Media City, UAE</p>
+  </footer>
+
+  <a href="https://wa.me/971507297260" class="whatsapp-float" target="_blank" aria-label="WhatsApp chat">💬</a>
+  <script src="main.js"></script>
+</body>
+</html>

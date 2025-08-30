@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - SERA GULF</title>
+  <link rel="stylesheet" href="style/main.css" />
+
+  <!-- Page-only styles to enrich layout -->
+  <style>
+    .subnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:20px 0}
+    .subnav a{background:#eef4ff;color:#0d4e7b;border:1px solid rgba(13,78,123,.15);padding:8px 12px;border-radius:999px;font-weight:600;text-decoration:none}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:#f3f3f6;border:1px solid rgba(0,0,0,.08);border-radius:999px;padding:6px 10px;font-weight:600}
+    .spec-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .spec-card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+    .spec-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+    .spec-table th,.spec-table td{padding:12px;border-bottom:1px solid #eee;text-align:left}
+    .faq details{background:#fff;border-radius:10px;padding:14px 16px;margin:10px 0;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+    .anchor{scroll-margin-top:90px}
+    .cta-bar{display:grid;place-items:center;text-align:center;padding:28px;border-radius:14px;background:rgba(255,255,255,.9)}
+  </style>
+</head>
+<body class="products">
+  <header>
+    <img src="assets/logo.jpg" class="logo" alt="Sera Gulf logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- In-page quick navigation -->
+  <div class="section">
+    <nav class="subnav">
+      <a href="#tiles">Tiles</a>
+      <a href="#sanitary">Sanitary Ware</a>
+      <a href="#accessories">Accessories</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#specs">Sizes & Specs</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+
+  <!-- ===== Tiles ===== -->
+  <section id="tiles" class="section anchor">
+    <h2 style="text-align:center;">Tiles</h2>
+    <p class="lead" style="text-align:center;">From classic patterns to large-format minimal surfaces.</p>
+
+    <!-- Quick filters (non-interactive tags for now) -->
+    <div class="spec-grid" style="margin-bottom:8px">
+      <div class="spec-card">
+        <strong>Effects</strong>
+        <div class="chips" style="margin-top:10px">
+          <span class="chip">Marble</span><span class="chip">Stone</span><span class="chip">Concrete</span>
+          <span class="chip">Wood</span><span class="chip">Contemporary</span><span class="chip">3D / Textured</span>
+        </div>
+      </div>
+      <div class="spec-card">
+        <strong>Colors</strong>
+        <div class="chips" style="margin-top:10px">
+          <span class="chip">White</span><span class="chip">Ivory</span><span class="chip">Beige</span>
+          <span class="chip">Grey</span><span class="chip">Black</span><span class="chip">Anthracite</span>
+        </div>
+      </div>
+      <div class="spec-card">
+        <strong>Rooms</strong>
+        <div class="chips" style="margin-top:10px">
+          <span class="chip">Bathroom</span><span class="chip">Kitchen</span><span class="chip">Living</span>
+          <span class="chip">Outdoor</span><span class="chip">Light Commercial</span><span class="chip">Heavy Commercial</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/tiles picture.png" alt="Ceramic & Porcelain Tiles" />
+        <h3>Stone / Marble Effects</h3>
+        <p>Porcelain tiles with lifelike veining and high wear resistance.</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/hero2.jpg" alt="Decor Patterned Tiles" />
+        <h3>Decor & Patterned</h3>
+        <p>Bold motifs for feature walls and statement floors.</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/hero3.jpg" alt="3D Geometric Tiles" />
+        <h3>3D & Textured</h3>
+        <p>Subtle reliefs for depth and light play.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sanitary Ware ===== -->
+  <section id="sanitary" class="section anchor" style="padding-top:10px">
+    <h2 style="text-align:center;">Sanitary Ware</h2>
+    <p class="lead" style="text-align:center;">Elegant, efficient fixtures.</p>
+
+    <div class="spec-grid" style="margin-bottom:8px">
+      <div class="spec-card">
+        <strong>Categories</strong>
+        <div class="chips" style="margin-top:10px">
+          <span class="chip">Water Closets</span><span class="chip">Wash Basins</span><span class="chip">Bidets</span>
+          <span class="chip">Bathtubs</span><span class="chip">Furniture</span><span class="chip">Accessories</span>
+          <span class="chip">Flushing Systems</span><span class="chip">Shower Trays</span>
+        </div>
+      </div>
+      <div class="spec-card">
+        <strong>Shapes</strong>
+        <div class="chips" style="margin-top:10px">
+          <span class="chip">Oval</span><span class="chip">Round</span><span class="chip">Rectangle</span><span class="chip">Rounded Rectangle</span>
+        </div>
+      </div>
+      <div class="spec-card">
+        <strong>Styles</strong>
+        <div class="chips" style="margin-top:10px">
+          <span class="chip">Avantgarde</span><span class="chip">Contemporary</span><span class="chip">Classic</span><span class="chip">Minimal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/pic 2.png" alt="Sanitary Ware" />
+        <h3>Basins, WCs & Bidets</h3>
+        <p>Water-saving, durable ceramic ware.</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/Pic 3.png" alt="Accessories" />
+        <h3>Accessories & Fittings</h3>
+        <p>Mixers, vanities, shower hardware and more.</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/hero1.png" alt="Bathroom Inspiration" />
+        <h3>Complete Bathrooms</h3>
+        <p>Inspiration sets combining tiles + fixtures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Accessories (anchor points to same cards) ===== -->
+  <section id="accessories" class="section anchor" style="padding-top:10px">
+    <h2 style="text-align:center;">Accessories</h2>
+    <p class="lead" style="text-align:center;">Finish your space with mixers, vanities, mirrors, and storage.</p>
+    <div class="grid">
+      <article class="card">
+        <img src="assets/Pic 3.png" alt="Accessories"/>
+        <div class="pad"><h3>Mixers & Fittings</h3><p>Durable finishes designed for daily use.</p></div>
+      </article>
+      <article class="card">
+        <img src="assets/pic 2.png" alt="Furniture"/>
+        <div class="pad"><h3>Vanities & Furniture</h3><p>Functional storage with clean lines.</p></div>
+      </article>
+      <article class="card">
+        <img src="assets/hero3.jpg" alt="Trays & Systems"/>
+        <div class="pad"><h3>Shower Systems</h3><p>Trays, channels, and accessories to complete the set.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="section anchor" style="padding-top:10px">
+    <h2 style="text-align:center;">Gallery</h2>
+    <p class="lead" style="text-align:center;">A quick showcase. Add unlimited images to the <code>/assets/</code> folder and duplicate cards.</p>
+    <div class="grid">
+      <article class="card"><img src="assets/hero1.png" alt="Luxury Bathroom"/><div class="pad"><h3>Luxury Bathroom</h3><p>Large format marble look.</p></div></article>
+      <article class="card"><img src="assets/hero2.jpg" alt="Patterned Floor"/><div class="pad"><h3>Patterned Floor</h3><p>Mediterranean style.</p></div></article>
+      <article class="card"><img src="assets/hero3.jpg" alt="Clean White 3D"/><div class="pad"><h3>Clean White</h3><p>3D relief wall.</p></div></article>
+    </div>
+  </section>
+
+  <!-- ===== Sizes & Specs ===== -->
+  <section id="specs" class="section anchor">
+    <h2 style="text-align:center;">Popular Sizes & Technicals</h2>
+    <p class="lead" style="text-align:center;">Contact us for the full catalog and technical sheets for each series.</p>
+
+    <table class="spec-table">
+      <thead>
+        <tr>
+          <th>Category</th><th>Typical Sizes (mm)</th><th>Thickness</th><th>Finish</th><th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Floor Tiles (Porcelain)</td>
+          <td>300×300 · 600×600 · 600×1200</td>
+          <td>8–10 mm</td>
+          <td>Matt / Polished / Honed</td>
+          <td>PEI 4–5, R9–R12, low water absorption</td>
+        </tr>
+        <tr>
+          <td>Wall Tiles (Ceramic)</td>
+          <td>300×600 · 300×900</td>
+          <td>7–9 mm</td>
+          <td>Gloss / Satin / Matt</td>
+          <td>Lightweight, easy to install</td>
+        </tr>
+        <tr>
+          <td>Large-Format Slabs</td>
+          <td>800×1600 · 1200×2400</td>
+          <td>6–9 mm</td>
+          <td>Polished / Silk</td>
+          <td>Seamless looks for walls & counters</td>
+        </tr>
+        <tr>
+          <td>Sanitary Ware</td>
+          <td>Basins, WCs, Bidets (various)</td>
+          <td>—</td>
+          <td>Gloss / Matt</td>
+          <td>Water-saving, durable ceramic</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="spec-grid" style="margin-top:16px">
+      <div class="spec-card"><strong>Slip Resistance</strong><br/>R9–R12 (series-dependent)</div>
+      <div class="spec-card"><strong>Abrasion (PEI)</strong><br/>PEI 3–5 for porcelain surfaces</div>
+      <div class="spec-card"><strong>Water Absorption</strong><br/>&lt; 0.5% for porcelain</div>
+      <div class="spec-card"><strong>Applications</strong><br/>Residential • Hospitality • Retail • Outdoor</div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section anchor">
+    <h2 style="text-align:center;">FAQ</h2>
+    <div class="faq">
+      <details>
+        <summary><strong>Can you provide samples?</strong></summary>
+        <p>Yes. We arrange quick samples and mockups for approvals.</p>
+      </details>
+      <details>
+        <summary><strong>Do you help with laying patterns?</strong></summary>
+        <p>We share pattern options (herringbone, stacked, brick, etc.) and grout color suggestions.</p>
+      </details>
+      <details>
+        <summary><strong>What about delivery timelines?</strong></summary>
+        <p>Lead time varies by series; we coordinate production and shipping to match site schedules.</p>
+      </details>
+      <details>
+        <summary><strong>Do you supply technical sheets?</strong></summary>
+        <p>Yes—spec sheets and test reports are available for each collection on request.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section cta-bar">
+    <h3>Need a tailored selection for your project?</h3>
+    <p class="lead" style="max-width:760px">Tell us your space, finishes you like, and timeline—we’ll shortlist suitable series, share samples, and assist with logistics.</p>
+    <p><a class="btn" href="contact.html">Request a Quote</a></p>
+  </section>
+
+  <footer><p>© 2025 SERA GULF LLC</p></footer>
+</body>
+</html>

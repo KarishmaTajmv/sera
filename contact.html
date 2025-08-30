@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - SERA GULF</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <style>
+    .contact-hero{display:grid;gap:18px;grid-template-columns:1.2fr .8fr;align-items:stretch}
+    @media (max-width:900px){ .contact-hero{grid-template-columns:1fr} }
+    .quick-card,.qr-card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+    .quick-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .quick-actions a{text-decoration:none;border:1px solid rgba(13,78,123,.18);padding:10px 14px;border-radius:999px;font-weight:700;color:#0d4e7b;background:#eef4ff}
+    .qr-wrap{display:flex;gap:16px;align-items:center}
+    .qr-box{width:160px;height:160px;display:grid;place-items:center;border:1px solid #eee;border-radius:10px;overflow:hidden}
+    .qr-box img{width:100%;height:100%;object-fit:contain}
+    .meta p{margin:.25rem 0}
+    .hours{display:grid;grid-template-columns: 140px 1fr;gap:6px;margin-top:10px}
+    .content-section h3{margin-top:24px}
+    .map-card{background:#fff;border-radius:14px;padding:0;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+    .note{color:#666;font-size:.95rem}
+  </style>
+</head>
+<body class="contact">
+  <header>
+    <img src="assets/logo.jpg" class="logo" alt="Sera Gulf logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="content-section">
+    <h2>Contact Us</h2>
+
+    <div class="contact-hero">
+      <div class="quick-card">
+        <h3>Reach us directly</h3>
+        <p class="lead">We’re happy to help with selections, samples, and quotations.</p>
+        <div class="meta">
+          <p><strong>Phone:</strong> <a href="tel:+971507297260">+971 50 729 7260</a></p>
+          <p><strong>Email:</strong> <a href="mailto:sales@seragulf.co">sales@seragulf.co</a></p>
+          <p><strong>Location:</strong> Sharjah Media City, UAE</p>
+        </div>
+        <div class="hours">
+          <div><strong>Hours</strong></div><div>Mon–Sat, 9:30–18:30 GST</div>
+          <div><strong>Support</strong></div><div>Same-day response (business hours)</div>
+        </div>
+        <div class="quick-actions">
+          <a href="tel:+971507297260">Call</a>
+          <a href="mailto:sales@seragulf.co">Email</a>
+          <a href="https://wa.me/971507297260" target="_blank">WhatsApp</a>
+          <a href="assets/SERA-GULF.vcf" download>Download vCard</a>
+        </div>
+      </div>
+
+      <div class="qr-card">
+        <h3>Scan our business card</h3>
+        <div class="qr-wrap">
+          <div class="qr-box">
+            <!-- Local QR image (no JS/CDN required) -->
+            <img src="assets/sera-gulf-contact-qr.png" alt="SERA GULF vCard QR">
+          </div>
+          <div>
+            <p><strong>SERA GULF LLC</strong></p>
+            <p>Tiles &amp; Sanitary Ware</p>
+            <p>Sharjah Media City, UAE</p>
+            <p class="note">Open your phone camera and save the contact instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Send a message</h3>
+    <form action="#" method="post" onsubmit="alert('Thanks! We will get back to you shortly.'); return false;">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="subject" placeholder="Subject (optional)" />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+      <button class="btn" type="submit">Send</button>
+    </form>
+
+    <h3 style="margin-top:26px">Find Us</h3>
+    <div class="map-card">
+      <iframe
+        src="https://maps.google.com/maps?q=Sharjah%20Media%20City&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="360" frameborder="0" style="border:0;" allowfullscreen
+        title="Google Map - Sharjah Media City"></iframe>
+    </div>
+
+    <div class="grid" style="margin-top:26px">
+      <article class="card">
+        <img src="assets/card me.jpg" alt="Business Card"/>
+        <div class="pad">
+          <h3>Share our details</h3>
+          <p>Use the QR image above or download the vCard to add us to your phone.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer><p>© 2025 SERA GULF LLC</p></footer>
+  <a href="https://wa.me/971507297260" class="whatsapp-float" target="_blank" aria-label="WhatsApp chat">💬</a>
+  <script src="main.js"></script>
+</body>
+</html>
